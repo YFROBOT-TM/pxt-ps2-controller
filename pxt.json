@@ -11,8 +11,7 @@
         "README.md",
         "main.blocks",
         "ps2controller.ts",
-        "test.ts",
-        "main.ts"
+        "test.ts"
     ],
     "testFiles": [
         "test.ts"
