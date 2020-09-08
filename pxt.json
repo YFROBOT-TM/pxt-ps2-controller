@@ -1,0 +1,25 @@
+{
+    "name": "ps2controller",
+    "version": "0.0.1",
+    "description": "Extension to use a PS2 controller",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "radio": "*"
+    },
+    "files": [
+        "README.md",
+        "main.blocks",
+        "ps2controller.ts",
+        "test.ts",
+        "main.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj"
+}
