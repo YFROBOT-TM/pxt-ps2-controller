@@ -3,6 +3,8 @@
 
 > reference https://github.com/gbraad/pxt-ps2-controller
 
+![](icon.png)
+
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.
