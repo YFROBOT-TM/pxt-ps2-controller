@@ -1,6 +1,8 @@
 
 > Open this page at [https://.github.io//](https://.github.io//)
 
+> reference https://github.com/gbraad/pxt-ps2-controller
+
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.
