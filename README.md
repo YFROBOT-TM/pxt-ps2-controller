@@ -24,9 +24,14 @@ To edit this repository in MakeCode.
 
 This image shows the blocks code from the last commit in master.
 This image may take a few minutes to refresh.
-
+PS2 Buttons
 ```blocks
 ps2controller.button_pressed(ps2controller.PS2Button.Cross)
+```
+
+PS2 Stick value
+```blocks
+ps2controller.stick_value(ps2controller.PSS.RX)
 ```
 
 ![A rendered view of the blocks](https://github.com//raw/master/.github/makecode/blocks.png)
