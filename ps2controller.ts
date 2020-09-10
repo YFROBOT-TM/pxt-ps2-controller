@@ -1,4 +1,4 @@
-//% weight=10 color="#7BD239" icon="\uf11b"
+//% weight=9 color="#7BD239" icon="\uf11b"
 namespace ps2controller {
 
     let chipSelect = 0
@@ -144,7 +144,7 @@ namespace ps2controller {
     * PS2 stick value
     * @param stick ps2 stick;
     */
-    //% weight=78
+    //% weight=70
     //% block="stick value %b"
     export function stick_value(stick: PSS): number {
         if (!connected) return 0x00
@@ -162,7 +162,12 @@ namespace ps2controller {
         return 0;
     }
 
-    function poll(): boolean {
+    /**
+    *  read game pad
+    */
+    //% weight=90
+    //% block="read Gamepad"
+    export function readGamepad(): boolean {
         let buf = send_command(poll_cmd)
         if (buf[2] != 0x5a) {
             return false;
@@ -177,10 +182,9 @@ namespace ps2controller {
         return true
     }
 
-    basic.forever(function () {
-        poll();
-    })
-
+    // basic.forever(function () {
+    //     poll();
+    // })
 
     // reverse 
     //"reverse": "github:gbraad/pxt-reversebit#v0.1.0"
