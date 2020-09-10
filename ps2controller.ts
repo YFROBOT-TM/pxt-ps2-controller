@@ -33,13 +33,13 @@ namespace ps2controller {
     //% weight=100
     //% inlineInputMode=inline
     export function initPS2Pin(CLKPin: DigitalPin, DATPin: DigitalPin, CMDPin: DigitalPin, CSPin: DigitalPin) {
-        // chipSelect = CSPin
-        // pins.digitalWritePin(chipSelect, 1)
-        // pins.spiPins(CMDPin, DATPin, CLKPin)
-
-        chipSelect = DigitalPin.P15
+        chipSelect = CSPin
         pins.digitalWritePin(chipSelect, 1)
-        pins.spiPins(DigitalPin.P14, DigitalPin.P13, DigitalPin.P16)
+        pins.spiPins(CMDPin, DATPin, CLKPin)
+
+        // chipSelect = DigitalPin.P15
+        // pins.digitalWritePin(chipSelect, 1)
+        // pins.spiPins(DigitalPin.P14, DigitalPin.P13, DigitalPin.P16)
 
         pins.spiFormat(8, 3)
         pins.spiFrequency(250000)
