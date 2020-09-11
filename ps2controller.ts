@@ -138,7 +138,7 @@ namespace ps2controller {
         LX,
         RX,
         LY,
-        RY,
+        RY
     };
 
     /**
