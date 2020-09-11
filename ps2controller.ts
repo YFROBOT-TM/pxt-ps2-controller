@@ -65,39 +65,22 @@ namespace ps2controller {
     }
 
     export enum PS2Button {
-        //% block="SELECT"
         Select,
-        //% block="START"
         Start,
-        //% block="︿" ∧
         Up,
-        //% block="﹀" ∨
         Down,
-        //% block="L1"
         L1,
-        //% block="R1"
         R1,
-        //% block="＜"
         Left,
-        //% block="＞"
         Right,
-        //% block="L2"
         L2,
-        //% block="R2"
         R2,
-        //% block="△"
         Triangle,
-        //% block="×"
         Cross,
-        //% block="L3"
         L3,
-        //% block="R3"
         R3,
-        //% block="□"
         Square,
-        //% block="○"
         Circle,
-        //% block="Any"
         Buttons
     };
 
