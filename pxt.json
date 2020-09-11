@@ -9,6 +9,8 @@
     },
     "files": [
         "README.md",
+        "main.blocks",
+        "main.ts",
         "ps2controller.ts"
     ],
     "testFiles": [
@@ -18,5 +20,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "blocksprj"
 }
