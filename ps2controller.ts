@@ -65,22 +65,39 @@ namespace ps2controller {
     }
 
     export enum PS2Button {
+        //% block="SELECT"
         Select,
+        //% block="START"
         Start,
-        Left,
-        Down,
-        Right,
+        //% block="∧"
         Up,
-        Square,
-        Cross,
-        Circle,
-        Triangle,
-        R1,
+        //% block="∨"
+        Down,
+        //% block="L1"
         L1,
-        R2,
+        //% block="R1"
+        R1,
+        //% block="＜"
+        Left,
+        //% block="＞"
+        Right,
+        //% block="L2"
         L2,
-        R3,
+        //% block="R2"
+        R2,
+        //% block="△"
+        Triangle,
+        //% block="×"
+        Cross,
+        //% block="L3"
         L3,
+        //% block="R3"
+        R3,
+        //% block="□"
+        Square,
+        //% block="○"
+        Circle,
+        //% block="Any"
         Buttons
     };
 
@@ -90,6 +107,7 @@ namespace ps2controller {
      */
     //% weight=80
     //% block="button pressed %b"
+    //% b.fieldEditor="gridpicker" b.fieldOptions.columns=4
     export function button_pressed(b: PS2Button): number {
         if (!connected) return 0x00
 
@@ -134,10 +152,10 @@ namespace ps2controller {
 
     // PS2 stick values
     export enum PSS {
-        RX,
-        RY,
         LX,
-        LY
+        RX,
+        LY,
+        RY,
     };
 
     /**
@@ -145,7 +163,8 @@ namespace ps2controller {
     * @param stick ps2 stick;
     */
     //% weight=70
-    //% block="stick value %b"
+    //% block="stick value %stick"
+    //% stick.fieldEditor="gridpicker" stick.fieldOptions.columns=2
     export function stick_value(stick: PSS): number {
         if (!connected) return 0x00
 
