@@ -69,9 +69,9 @@ namespace ps2controller {
         Select,
         //% block="START"
         Start,
-        //% block="∧"
+        //% block="︿" ∧
         Up,
-        //% block="∨"
+        //% block="﹀" ∨
         Down,
         //% block="L1"
         L1,
