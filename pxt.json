@@ -1,11 +1,10 @@
 {
     "name": "ps2controller",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "Microbit Makecode Extension to use a PS2 controller",
     "license": "MIT",
     "dependencies": {
-        "core": "*",
-        "radio": "*"
+        "core": "*"
     },
     "files": [
         "README.md",
